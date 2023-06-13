@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/RÍO_TERCERO-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Turismo Río Tercero</title>
+
+    <!--BootsTrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Río Tercero - turismo
+                    </h1>
+                </div>
+            </div>           
+        </header>
+        <div class="row">
+            <div class="col-6 text-info">
+                <!--NavBar-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container">
+                        <a class="navbar-brand">
+                          <img src="./img/ec6bda1c5b4c382686362cf17fd3ee44.png" alt="Bootstrap" width="100" height="100">
+                        </a>
+                    </div>
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>  
+                          <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>           
+        </div>
+        <section class="section">
+            <img src="./img/Plaza_riotercero.JPG" alt="placita beia" width="500px">
+            <div class="row">
+                <div class="col">
+                    <!--formulario de consultas-->
+                    <form name="formConsultas" class="row g-3 needs-validation" action="" method="GET" novalidate>
+
+                        <!--Nombre-->
+
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" name="Nombre" minlength="3" maxlength="30" class="form-control" id= "validationCustom01" required>
+                            <div class="valid-feedback">
+                                correcto!
+                            </div>
+                        </div>
+
+                        <!--Apellido-->
+
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" name="Apellido" minlength="3" maxlength="30" class="form-control" id= "validationCustom02" required>
+                            <div class="valid-feedback">
+                                correcto!
+                            </div>
+                        </div>
+
+                        <!--Mail-->
+
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Mail</label>
+                            <input type="email" name="email" minlength="3" maxlength="30" class="form-control" id= "validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id = "inputGroupPrepend"></span>
+                            </div>
+                            
+                            <div class="invalid-feedback">
+                                ingrese un mail válido
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="validationCustom03" class="form-label">Consulta</label>
+                            <input type="text" name="consulta" minlength="15" class="form-control" id="validationCustom03">
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-ceck">
+                                <input class="form-ceck-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-ceck-label" for="invalidCheck">
+                                Acepto los términos y condiciones.
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debe estar de acuerdo antes de enviar
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit">Enviar consulta</button>
+                            <button type="reset">Restablecer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div>
+                <i class="fa fa-copyrigth" aria-hidden="true">Creado en 2022 - PRoA Río Tercero</i> 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
